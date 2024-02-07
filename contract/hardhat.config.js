@@ -10,9 +10,7 @@ const ACCOUNT= `0x${process.env.ACCOUNT}`
 module.exports = {
   solidity: "0.8.19",
   etherscan: {
-    apiKey: {
-    sepolia: API,
-    }
+    apiKey: process.env.ETHERSCANAPI,
   },
   networks: {
     sepolia: {
